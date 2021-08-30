@@ -1,17 +1,14 @@
 import React from 'react';
+import RoboFriends from './RoboFriends';
 
-const RoboFriendsList = ({name, email}) => {
+const RoboFriendsList = ({robots}) => {
   return (
-    <div className= "bg-dark-blue dib br3 pa3 ma2 grow bw-2 shadow-5">
-      <h1>Robo Friends</h1>
-      <img src="https://robohash.org/test?size=200x200" alt="Robots"/>
-      <div>
-        <h3>{name}</h3>
-        <p>{email}</p>
-      </div>
+    <div>
+      <RoboFriends id = {robots[0].id} name = {robots[0].name} email= {robots[0].email} />
+      <RoboFriends id = {robots[1].id} name = {robots[1].name} email= {robots[1].email} />
+      <RoboFriends id = {robots[2].id} name = {robots[2].name} email= {robots[2].email} />    
     </div>
- 
-  );
+  )
 }
 
-export default RoboFriendsList;
+export default RoboFriendsList

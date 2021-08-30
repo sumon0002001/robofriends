@@ -1,11 +1,12 @@
 import React from 'react';
-import RoboFriends from './Components/RoboFriends';
 import { robots } from './robots';
-
+import './App.css'
+import RoboFriendsList from './Components/RoboFriendsList';
 const App = () => {
   return (
     <div >
-     <RoboFriends robots ={robots} />
+     <h1 className = "app">Robo Friends</h1>
+     <RoboFriendsList robots = {robots} />
      </div>
   );
 }
